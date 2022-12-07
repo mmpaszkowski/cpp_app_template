@@ -1,9 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
 
-set(APP_PROJECT_NAME cpp_app_template)
-
 # PROJECT
-project(${APP_PROJECT_NAME} VERSION 0.0.1 LANGUAGES CXX)
+project(cpp_app_template VERSION 0.0.1 LANGUAGES CXX)
 
 # GLOBAL CMAKE VARIABLES
 set(CMAKE_CXX_STANDARD              17)
@@ -65,6 +63,6 @@ if (APP_ENABLE_TESTING)
 endif()
 
 # INSTALL TARGETS
-install(TARGETS ${APP_PROJECT_NAME}
+install(TARGETS ${PROJECT_NAME}
         ARCHIVE DESTINATION lib
         LIBRARY DESTINATION lib)

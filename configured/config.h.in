@@ -1,10 +1,10 @@
-#ifndef @APP_PROJECT_NAME@_CONFIG
-#define @APP_PROJECT_NAME@_CONFIG
+#ifndef @PROJECT_NAME@_CONFIG
+#define @PROJECT_NAME@_CONFIG
 
 #include <cstdint>
 #include <string_view>
 
-static constexpr std::string_view project_name = "@APP_PROJECT_NAME@";
+static constexpr std::string_view project_name = "@PROJECT_NAME@";
 static constexpr std::string_view project_version = "@PROJECT_VERSION@";
 static constexpr std::int32_t project_version_major{ @PROJECT_VERSION_MAJOR@ };
 static constexpr std::int32_t project_version_minor{ @PROJECT_VERSION_MINOR@ };

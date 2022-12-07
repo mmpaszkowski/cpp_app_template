@@ -1,4 +1,4 @@
-set(TEST_MAIN ${APP_PROJECT_NAME}_unit_tests)
+set(TEST_MAIN ${PROJECT_NAME}_unit_tests)
 set(TEST_SOURCES library.cpp)
 
 FetchContent_Declare(
