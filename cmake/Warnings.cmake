@@ -1,6 +1,6 @@
 function(target_set_warnings)
 
-    if(NOT MNIST_ENABLE_WARNINGS)
+    if(NOT ENABLE_WARNINGS)
         return()
     endif()
 

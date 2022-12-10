@@ -23,7 +23,7 @@
 │   ├── CMakeLists.txt
 │   └── config.h.in
 ├── include
-│   └── mnist
+│   └── cpp_app_template
 │       └── library.h
 ├── README.md
 ├── src
