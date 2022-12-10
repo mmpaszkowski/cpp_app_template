@@ -13,9 +13,8 @@ add_executable(${TEST_MAIN} ${TEST_SOURCES} ${APP_SOURCES} ${APP_HEADERS})
 target_link_libraries(${TEST_MAIN} PRIVATE
         GTest::gtest_main
         mmpaszkowski::mnist_loader
-        monogon::monogon
-        fmt::fmt
-        )
+        fmt::fmt)
+
 
 if (${MNIST_ENABLE_WARNINGS})
     target_set_warnings(TARGET ${TEST_MAIN} ENABLE ON AS_ERROR OFF)

@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../include/mnist/library.h"
+#include "../include/cpp_app_template/library.h"
 
 TEST(cpp_app_template, mul)
 {
