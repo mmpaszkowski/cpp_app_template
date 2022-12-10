@@ -1,5 +1,4 @@
-#include "../include/cpp_static_lib_template/library.h"
-
+#include "../include/mnist/library.h"
 #include <fmt/color.h>
 #include <config.h>
 

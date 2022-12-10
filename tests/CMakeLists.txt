@@ -12,17 +12,17 @@ add_executable(${TEST_MAIN} ${TEST_SOURCES} ${APP_SOURCES} ${APP_HEADERS})
 #target_link_libraries(${TEST_MAIN} PUBLIC ${PROJECT_NAME})
 target_link_libraries(${TEST_MAIN} PRIVATE
         GTest::gtest_main
-        cpp_static_lib_template::cpp_static_lib_template
+        mmpaszkowski::mnist_loader
         fmt::fmt)
 
 
-if (${APP_ENABLE_WARNINGS})
+if (${MNIST_ENABLE_WARNINGS})
     target_set_warnings(TARGET ${TEST_MAIN} ENABLE ON AS_ERROR OFF)
 endif ()
 
 add_target_static_analyers(${TEST_MAIN})
 
-if (APP_ENABLE_COVERAGE)
+if (MNIST_ENABLE_COVERAGE)
     set(COVERAGE_MAIN "coverage")
     set(COVERAGE_EXCLUDES
             "${PROJECT_SOURCE_DIR}/app/*"
